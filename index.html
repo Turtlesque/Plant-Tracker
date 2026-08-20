@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Plant Tracker" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="theme-color" content="#27241F" />
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlBsYW50IFRyYWNrZXIgTWFwIiwgInNob3J0X25hbWUiOiAiUGxhbnQgVHJhY2tlciIsICJkZXNjcmlwdGlvbiI6ICJHUFMtbWFwcGVkIHBsYW50IGdyb3d0aCB0cmFja2VyIHdpdGggcGhvdG8gaGlzdG9yeSIsICJzdGFydF91cmwiOiAiLiIsICJzY29wZSI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNFREREQ0EiLCAidGhlbWVfY29sb3IiOiAiIzI3MjQxRiIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFGbFVsRVFWUjRuTzNjd1cwVVFSQ0Y0VEVpQ3c1Y2tNaUJCSWlBR0pBSUNJa1lISUVUY0E2V2ZQR0JPT0NBUjFwV3U5N3A3cXJ1cW5yL2QxN1pOVFB2ZGM5NHZidHRBQUFBQUFBQUFBQUFBQUFBWmR5dEhtREU1MDhmLzZ5ZUFmODhQYitrekZLYW9RbDdQaGxLRVhwQVFsOUgxREtFSElyZzF4V3RDS0dHSWZnNm9oUWh4QkFFWDlmcUlpejk1UVFmdTFWRmVMZmlsMjRiNGNmL1Z1VmhldXNJUG02WnVSdE0zUUVJUDQ2WW1aTnBCU0Q4YURFckwxTUtRUGpSWTBadTNBdEErREhDT3ordUJTRDhzT0NaSTdjQ0VINVk4c3FUU3dFSVB6eDQ1TXE4QUlRZm5xenpaVm9Bd284WkxITzI3RjhoZ0FqTUNzRHFqNW1zOG1aU0FNS1BGU3h5eHkwUXBBMFhnTlVmSzQzbWp4MEEwb1lLd09vLzd2SGhmdlVJNlkza2tCMEEwcm9Md09vL2JsLzkyUVhHOWVhUkhRRFN1Z3JBNmovdWZOVm5GeGpYazB0MkFFaWpBQXRjVyszWkJlWnJMZ0MzUDRpc05aL3NBSlBkV3VYWkJlYWlBSkJHQVNaaWRZK0hBZ1JFVWVacEtnQVB3UDBJOVR3dE9XVUhDSXJDekVFQkppRE1jVkdBd0NpT1B3b0FhUlRBMmVncXppN2dpd0pBR2dWd3hPb2RId1ZJZ0NMNW9RQk9DRzBPRkNBSkN1V0RBamdnckhsUWdFUW9sajBLWUl5UTVrSUJJSTBDR0pxeCtyUEQyS0lBa0VZQkVtSVhzRU1CakJES25DaEFVaFRPQmdVd1FCanpvZ0NKVWJ4eEZHQVFJY3lOQWtBYUJSZ1FZZldQTUVObUZBRFNLRUNuU0N0dnBGbXlvUUNRUmdFNlJGeHhJODZVQVFXQXRMdVdGL1B0ME5kWDJpOWZ2eDE2WGEralAvLzhkYXFlbmw4T1pmdTk5eUFWM1FxWngrM0k0OFA5ZjcvMzBnemNCclhqRnFoUjVCVTI4bXhSVVFCam5xc3dLN3c5Q21DSWowVG1Rd0dNekF3bUpiQkRBU0NOQWhoWXNTS3pDOWlnQUlOV0JwRVNqS01BQXlJRU1NSU1tVkVBU0tNQW5TS3R2SkZteVlZQ2RJZ1l1SWd6WlVBQkdrVU9XdVRab3FJQWtFWUJHbVJZWVRQTUdBa0ZPQ2hUc0RMTnVob0ZPQ0Jqb0RMT3ZBSUZnRFFLY0VQbWxUVHo3TE5RZ0RkVUNGQ0ZZL0JFQWE2b0ZKeEt4MktOQWtBYUJiaWc0b3BaOFpnc1VJQXpsWU5TK2RoNlVZQVRDZ0ZST01ZV0ZBRFNLTUFycFpWUjZWaHZvUUNiWmlBVWova1MrUUlvQjBINTJIZnlCWUEyNmE5SFA3SUNydmdtNkJZVzgxWDhVdDJqWDQ4dVc0RHpyeHZ2L1JrUldCeEh0UkpRQUdkUndyK3JGdUJSUnd2QU0wQ0hhT0hmdHBnelpVQUJHa1VPV3VUWm9xSUFEVElFTE1PTWtWQ0FneklGSzlPc3EvRVFmRVAyTUtrK0hQTVFiQ0I3K0xldHhqRjRvZ0JYVkFwT3BXT3hSZ0V1cUJpWWlzZGtnUUtjcVJ5VXlzZldpd0tjVUFpSXdqRzJvQUN2bElLaGRLeTNVSUJOTXhDS3gzeUpmQUdVZzZCODdEdnBBaEFBem9Gc0FkUXYvQ25sY3lGWkFPVUxmbzNxT1pFcmdPcUZQa0x4M0VnVlFQRUN0MUk3UnpJRlVMdXdJNVRPbFVRQmxDNm9GWlZ6VnZyekFDb1gwVnZHenhUSWZ4NkE4TnVwZkM1TEZxRHlCVnVsNmprdFY0Q3FGeXFDaXVlMlZBRXFYcUJvcXAzak1nV29kbUVpcTNTdVN4U2cwZ1hKb3NvNVQxK0FLaGNpb3dybnZ2VDdBTkg4L1A3aDBPdCsvUHJ0UEVsOTh1OERBRWRRQUVpakFKQkdBU0NOQWtBYUJZQzBwZ0ljL2RNU3NGSkxUdGtCSUkwQ1FCb0ZnRFFLQUduTkJlQkJHSkcxNXBNZEFOSW9BS1IxRllEYklFVFVrMHQyQUVqckxnQzdBQ0xwemVOUWlQbUVHS0xvTGNEUUxSQzdBQ0lZeVNIUEFKQTJYQUIyQWF3MG1qOTJBRWd6S1FDN0FGYXd5SjNaRGtBSk1KTlYzcmdGZ2pUVEFyQUxZQWJMbkpudkFKUUFucXp6NVhJTFJBbmd3U05YYnM4QWxBQ1d2UExrK2hCTUNXREJNMGZ1ZndXaUJCamhuWjhwZndhbEJPZ3hJemZUM2dlZ0JHZ3hLeTlUM3dpakJEaGlaazZXQlpJUDArRGNpZ1Z5MmI5Q3NCdmcxS284aEFnaHU0R3UxUXRoaUFMc0tJS08xY0hmaFJqaUhFV29LMHJ3ZDZHR09VY1I2b2dXL0YzSW9TNmhEUGxFRGYycDhBTytoVkxFa1NIc0FBQUFBQUFBQUFBQUFBQUZmd0d3Y2p5MFpKbW03d0FBQUFCSlJVNUVya0pnZ2c9PSIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55In0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQVJCa2xFUVZSNG5PM2R5NjNkMWhXQVlUcElGeGxvSWtBOXVJRlVrQm9DcEtBQXFjRVZ1QUgzWU1BVEQxS0hNcEFkU2ZmSlErN0hlbnpmTEFqZ2U4Uzl1ZGRQWGx2bk9BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBNEs0ZmRuOEFZdm4wOGNQbjNaOEJtT2ZYMzM1MzduTWNod0JveDRBSDNpSVErckRRaFJuMndBaWlvQ2FMV29pQkQ2d2dDR3F3aUlrWitFQUVnaUFuaTVhTW9ROUVKZ2J5c0ZBSkdQcEFSbUlnTm9zVGxLRVBWQ0lHNHJFZ3dSajhRR1ZDSUE0TEVZQ2hEM1FrQnZaeThUY3krQUdFd0M0dStnWUdQOEJ6UW1BdEYzc2hneC9nZlVKZ0RSZDVBWU1mNEhGQ1lDNFhkeUtESCtBK0lUREhYM1ovZ0tvTWY0QXhuS2R6cUtyQmJGU0FlYndOR01lRkhNVGdCMWhIQ056blZ3QURHUDRBYXpsMzcxTlFOOWlBQVB0NUczQ05Od0FYR2Y0QU1UaVByeEVBRjloc0FMRTRseC9udGNrRGJEQ0ErUHhLNEJ4dkFFNHkvQUZ5Y0Y2Zkl3Qk9zSmtBY25GdXY4OXJramZZUUFENStaWEF5N3dCZUlYaEQxQ0Q4L3hsQXVBRk5ndEFMYzcxNXdUQUV6WUpRRTNPOSs4SmdHL1lIQUMxT2VlL0VnQi9zQ2tBZW5EZWZ5RUFEcHNCb0J2bnZnQ3dDUUNhNm43K3R3NkE3b3NQMEYzbk9kQTJBRG92T2dCZmRaMEhMUU9nNjJJRDhMS09jNkZkQUhSY1pBRGUxMjArdEFxQWJvc0x3R002ellrMkFkQnBVUUc0cnN1OGFCRUFYUllUZ0RFNnpJM3lBZEJoRVFFWXIvcjhLQjBBMVJjUGdMa3F6NUhTQVFBQXZLeHNBRlN1TmdEV3FUcFBTZ1pBMWNVQ1lJK0tjNlZjQUZSY0pBRDJxelpmeWdVQUFQQytVZ0ZRcmM0QWlLWFNuQ2tUQUpVV0JZQzRxc3liRWdGUVpURUF5S0hDM0NrUkFBREFZOUlIUUlVS0F5Q2Y3UE1uZFFCa3YvZ0E1Slo1RHFVT0FBRGdtclFCa0xtNkFLZ2o2enhLR3dBQXdIVXBBeUJyYlFGUVU4YTVsQzRBTWw1a0FPckxOcC9TQlFBQWNGK3FBTWhXVndEMGttbE9wUW9BQUdDTU5BR1FxYW9BNkN2THZFb1RBQURBT0NrQ0lFdE5BY0J4NUpoYktRSUFtT09YbjMvYS9SR0FUY0lIUUlhS0FvQ25vcyt2OEFFQXpQSG4wNyszQU5CVDZBQ0lYazhBOEpiSWN5eDBBQUJ6UEgzcTl4WUEraEVBQU5CUTJBQ0kvTm9FTW52dGFkOWJBSmdqNmp3TEd3QUF3RHdoQXlCcUxVRjI3ejNsZXdzQWMwU2NheUVEQUFDWVN3QkFFMmVmN3IwRmdCN0NCVURFMXlRQWNGZTArUll1QUlEeFBOVURUd2tBNEJuQkFQV0ZDb0JvcjBjQVlLUkljeTVVQUFEalhYMmE5eFlBYWhNQUFOQlFtQUNJOUZvRXFyajdGTzh0QUl3WFpkNkZDUUFBWUIwQkFFV05lbnIzRmdCcUVnQUEwRkNJQUlqeSt4Q293bE03eEJaaDdvVUlBQ0EyUVFIMUNBQW94ckFHemhBQXdDbkNBbXJaSGdBUmZnOENWUmpTa01mdStiYzlBSUE4QkFiVUlRQUFvQ0VCQUVXc2VqcjNGZ0JxRUFBQTBORFdBTmo5TDBCQUZhdWZ5cjBGZ0RGMnprRnZBQUNnSVFFQXlYa2FCNjRRQU1BbHdnTnlFd0NRbUNFTVhDVUFnTXNFQ09RbEFDQXB3eGU0UXdBQXR3Z1J5R2xiQVBnN0FPQTZReGZxMkRVUHZRRUFiaE1ra0k4QUFJQ0dCQUFrRS9WcE8rcm5BbDRtQUFDZ0lRRUFpWGpLQmtZUkFNQXdBZ1h5RUFDUWhPRUtqQ1FBZ0tHRUN1UWdBQ0FCUXhVWVRRQUF3d2tXaUU4QVFIQ0dLVENEQUFDbUVDNFFtd0NBd0F4UllCWUJBRXdqWUNBdUFRQUFEUWtBQ01yVE16Q1RBQUNtRWpJUWt3Q0FnQXhOWURZQkFFd25hQ0FlQVFEQkdKYkFDZ0lBV0VMWVFDd0NBQUl4SklGVkJBQ3dqTUNCT0FRQUJHRTRBaXNKQUFCb1NBQUFTM25UQVRFSUFBakFVQVJXRXdEQWNvSUg5aE1Bc0psaENPd2dBSUF0aEEvc0pRQmdJME1RMkVVQUFOc0lJTmhIQU1BbWhoK3drd0FBdGhKQ3NJY0FnQTBNUFdBM0FRQUFEUWtBV016VC8zT3VDYXduQUFDZ0lRRUFoT0F0QUt3bEFHQWhRdzZJUWdBQVlRZ2tXRWNBd0NLR0d4Q0pBQUJDRVVxd2hnQ0FCUXcxSUJvQkFJUWptR0ErQVFDVEdXWkFSQUlBQUJvU0FEQ1JwLy9yWER1WVN3QUFRRU1DQUNieEJIdWZhd2p6Q0FBQWFFZ0FBS0Y1Q3dCekNBQ1l3TkFDb2hNQVFIaUNDc1lUQURDWVlRVmtJQUNBRklRVmpDVUFZQ0JEQ3NoQ0FBQkFRd0lBQnZIMFA1OXJET01JQUFCb1NBREFBSjVNMTNHdFlRd0JBQUFOQ1FDNHlSUHBlcTQ1M0NjQUFLQWhBUUNrNUMwQTNDTUE0QVpEQ01oS0FBQkFRd0lBTHZMMHY1ODFnT3NFQUFBMEpBRGdBaytlY1ZnTHVFWUFBRUJEQWdBZTVJa3pIbXNDai92cjdnOEFmUFhqMy8veDNmL09QdGlxL1htZ2toOTIvZUJQSHo5ODN2V3o0YXBSQSt6cFlKejVzM1piK1djOTg3TWdvbDkvKzMzNVBQWUdBQ1l5a001NTdUcFZpU0NJeUJzQU9PbXRZVFI2MEZjYmZDdXZqK2dpSTI4QUlMZ1Z3NlhhOEQrT0wzK21rZGZPR3dPNHp4c0FDS1Q2QVBOMERpL2I4UWJBZndZSUFBMEpBQWlpK3RQL2NmVDRNMElXQWdBQzZEUVlPLzFaSVRJQkFKdDFISWdkLzh3UWpRQUFnSVlFQUd6VStVbTQ4NThkSWhBQXNJa0I2QnJBVGdJQU5qRDR2bkl0WUE4QkFJc1plTSs1SnJDZUFBQ0FoZ1FBTE9SSjkzV3VEYXdsQUdBUkErNTlyaEdzSXdCZ0FZUHRQTmNLMWhBQUFOQ1FBSURKUE5FK3pqV0QrUVFBVEdTUVhlZmF3VndDQUNZeHdPNXpEV0VlQVFBVEdGemp1Sll3aHdBQWdJWUVBQXptaVhVODF4VEdFd0F3a0VFMWoyc0xZd2tBR01TQW1zODFobkVFQUFBMEpBQmdBRSttNjdqV01JWUFnSnNNcFBWY2M3aFBBTUFOQnRFK3JqM2NJd0FBb0NFQkFCZDVBdDNQR3NCMUFnQXVNSGppc0Jad2pRQ0FCeGs0OFZnVGVKd0FnQWNZTkhGWkczaU1BQUNBaGdRQW5PUUpNejVyQk9jSkFEakJZTW5EV3NFNUFnRGVZYURrWTgzZ2ZRSUFBQm9TQVBBR1Q1SjVXVHQ0bXdDQVZ4Z2crVmxEZUowQWdCY1lISFZZUzNpWkFJQW5ESXg2ckNrOEp3QUFvQ0VCQU4vd3BGaVh0WVh2Q1FENGd3RlJueldHcndRQUhBWkRKOVlhdmhBQUFOQ1FBS0E5VDRUOVdITVFBRFJuRVBSbDdlbE9BTkNXQVlBOVFHY0NBQUFhRWdDMDVNbVBQOWtMZENVQWFNZUJ6MVAyQkIwSkFGcHgwUE1hZTROdUJBQnRPT0I1anoxQ0p3SUFBQm9TQUxUZ3lZNno3Qlc2RUFDVTUwRG5VZllNSFFnQVNuT1FjNVc5UTNVQ0FBQWFFZ0NVNVFtT3Urd2hLaE1BbE9UZ1poUjdpYW9FQU9VNHNCbk5ucUlpQVVBcERtcG1zYmVvUmdBQVFFTUNnREk4b1RHYlBVWWxBb0FTSE15c1lxOVJoUUFnUFFjeXE5bHpWQ0FBQUtBaEFVQnFuc1RZeGQ0ak93RkFXZzVnZHJNSHlVd0FrSktEbHlqc1JiSVNBQURRa0FBZ0hVOWNSR05Qa3BFQUlCVUhMVkhabTJRakFFakRBVXQwOWlpWkNBQlNjTENTaGIxS0ZnSUFBQnI2WWRjUC92VHh3K2RkUDV0Y01qeFIvZmozZjd6Ni8yWDQvQkZsdjZadmZYNTQ2dGZmZmw4K2p3VUFvVVU0Nk84YzVCRStmMmJacjcwSTRDd0JBTjlZY1lEUFBLQWpES0FLc3ErUkNPQ01IUUh3MTlVL0VGYmFkZmdhL3VQODh2TlAwOWJ4dlgrdWRhUXlid0FJNmN6QkcvWEp5dENZSS9ONlIvM3N4T0ZYQUhETWZlS2J6ZkNmSy9PK3lQclpXVU1BUUZJRy8xcUdLZFhzQ0FCL0R3RGNaUGl2NTVyRGZRSUFiakNJOW5IdDRSNEJBQmNaUVB0WkE3aE9BTUFGQms4YzFnS3VFUUR3SUFNbkhtc0NqeE1BOEFDREppNXJBNDhSQUhDU0FST2ZOWUx6QkFDY1lMRGtZYTNnSEFFQTd6QlE4ckZtOEQ0QkFHOHdTUEt5ZHZBMkFRQ3ZNRUR5czRid09nRUFMekE0NnJDVzhESUJBRThZR1BWWVUzak90d0hDSHd5SkhueVRJQkg1TmtEWXhQRHZ3MXJERndLQTlneUVmcXc1Q0FDYU13ajZzdlowSndCb3l3REFIcUF6QVVCTERuNytaQy9RbFFDZ0hRYytUOWtUZENRQWFNVkJ6MnZzRGJvUkFMVGhnT2M5OWdpZENBQmFjTEJ6bHIxQ0Z3S0E4aHpvUE1xZW9RTUJRR2tPY3E2eWQ2aE9BRkNXQTV5NzdDRXFFd0NVNU9CbUZIdUpxbndiSUtVNHJKbkpOd2t5aTI4RGhCc01mMmF6eDZoRUFGQ0NnNWxWN0RXcUVBQ2s1MEJtTlh1T0NnUUFxVG1JMmNYZUl6c0JRRm9PWUhhekI4bE1BSkNTZzVjbzdFV3lFZ0NrNDhBbEdudVNqQVFBcVRob2ljcmVKQnNCUUJvT1dLS3pSOGxFQUpDQ2c1VXM3Rld5RUFDRTUwQWxHM3VXREFRQW9UbEl5Y3JlSlRwZkJrUklEazhxOFNWQ3ZNZVhBY0ZoK0ZPUFBVMUVBb0JRSEpSVVpXOFRqUUFnREFjazFkbmpSQ0lBQ01IQlNCZjJPbEVJQUxaeklOS05QVThFQW9DdEhJUjBaZSt6bXdCZ0d3Y2czYmtIMkVrQXNJV0RENzV3TDdDTEFHQTVCeDU4enozQkRnS0FwUngwOERMM0Jxc0pBSlp4d01IYjNDT3NKQUJZd3NFRzU3aFhXRVVBTUowRERSN2pubUVGM3diSU5BNHh1TTgzQ2ZiZzJ3QXB3L0NITWR4THpDSUFHTTZCQldPNXA1aEJBRENVZ3dybWNHOHhtZ0JnR0FjVXpPVWVZeVFCd0JBT0psakR2Y1lvQW9EYkhFaXdsbnVPRVFRQXR6aUlZQS8zSG5jSkFDNXpBTUZlN2tIdUVBQmM0dUNCR055TFhDVUFlSmdEQjJKeFQzS0ZBT0FoRGhxSXliM0pvd1FBcHpsZ0lEYjNLSThRQUp6aVlJRWMzS3VjNWRzQWVaUERCUEx5VFlKNStEWkFRakg4SVRmM01HOFJBTHpJd1FFMXVKZDVqUURnR1FjRzFPS2U1aVVDZ084NEtLQW05elpQQ1FEK3p3RUJ0Ym5IK1pZQTREZ09Cd04wNFY3blQvNHpRQ2ppMy8vODI1S2Y4Ni8vL0hmSno0Rk8vR2VBQU1BU0FnQUFHaElBQU5DUUFBQ0FoZ1FBQURRa0FBQ2dJUUVBQUEwSkFBQm9TQUFBUUVNQ0FBQWFFZ0FBME5DMkFOang5eDREUURTNzVxRTNBQURRa0FBQWdJWUVBQUEwSkFBQW9DRUJBQUFOQ1FBQWFFZ0FBRUJEV3dQQTN3VUFRR2M3NTZBM0FBRFFrQUFBZ0lZRUFBQTBKQUFBb0tIdEFlQmZCQVNnbzkzemIzc0FBQURyQ1FBQWFFZ0FBRUJESVFKZzkrOUJBR0NsQ0hNdlJBQUFBR3NKQUFCb1NBQUFRRU5oQWlEQzcwTUFZTFlvOHk1TUFBQUE2d2dBQUdnb1ZBQkVlUzBDQURORW1uT2hBZ0FBV0VNQUFFQkQ0UUlnMHVzUkFCZ2wybndMRndBQXdId0NBQUFhQ2hrQTBWNlRBTUFkRWVkYXlBQUFBT1lLR3dBUmF3a0FIaFYxbm9VTkFBQmdIZ0VBQUEyRkRvQ29yMDBBNEl6SWN5eDBBQUFBYzRRdGsyOTkrdmpoOCs3UEFBQ1BpUHowZnh6ZUFBQkFTeWtDSUhwRkFjQzNNc3l0RkFFQUFJeVZKZ0F5MUJRQVpKbFhhUUlBQUJnblZRQmtxU29BZXNvMHAxSUZBQUF3UnJvQXlGUlhBUFNSYlQ2bEM0RGp5SGVSQWFndDQxeEtHUUFBd0QxcEF5QmpiUUZRVDlaNWxEWUFBSURyVWdkQTF1b0NvSWJNY3loMUFCeEg3b3NQUUY3WjUwLzZBQUFBSGxjaUFMSlhHQUM1VkpnN0pRTGdPR29zQmdEeFZaazNaUUxnT09vc0NnQXhWWm96cFFJQUFEaW5YQUJVcWpNQTRxZzJYOG9Gd0hIVVd5UUE5cW80VjBvR3dISFVYQ3dBMXFzNlQ4b0dBQUR3dXRJQlVMWGFBRmlqOGh3cEhRREhVWHZ4QUppbit2d29Id0RIVVg4UkFSaXJ3OXhvRVFESDBXTXhBYml2eTd4b0V3REgwV2RSQWJpbTA1eG9GUURIMFd0eEFUaXYyM3hvRndESDBXK1JBWGhieDduUU1nQ09vK2RpQS9CYzEzblFOZ0NPbysraUEvQkY1em5RT2dDT28vZmlBM1RXL2Z4dkh3REhZUk1BZE9QY0Z3RC9aek1BOU9DOC8wSUFmTU9tQUtqTk9mK1ZBSGpDNWdDb3lmbitQUUh3QXBzRW9CYm4rbk1DNEJVMkMwQU56dk9YdVNnbmZQcjQ0ZlB1endEQVl3eit0M2tEY0lKTkJKQ0xjL3Q5QXVBa213a2dCK2YxT1M3U0JYNGxBQkNQd2Y4WWJ3QXVzTWtBWW5FdVAwNEFYR1N6QWNUZ1BMN0dSUnZBcndRQTFqUDQ3L0VHWUFDYkVHQXQ1KzU5THVCZzNnWUF6R1B3aitOQ1RpSUVBTVl4K01meks0QkpiRmFBTVp5bmM3aW9DM2diQVBBNGczOHVGM2NoSVFEd1BvTi9EUmQ1QXlFQThKekJ2NWFMdlpFUUFERDRkM0hSQXhBQ1FFY0cvMTR1ZmpCaUFLak0wSS9EUWdRbEJJQktEUDU0TEVnQ1lnREl5TkNQemVJa0l3YUF5QXo5UEN4VVltSUFpTURRejhtaUZTSUlnQlVNL0Jvc1ltR0NBQmpCd0svSm9qWWpDb0MzR1BaOVdHaStJeENnTmdNZUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFtT1ovc3NqTUM1L0ptRElBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55In0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQU5NRWxFUVZSNG5PM2R6WTBkeHhsQVVkSlFGbDV3UTRBNUtBRkY0QmdNT0NBRGprRVJLQUZsNGpqb0JTVkxJbWM0NzZlcXU3cnVPU3N0Qk9LOTZwcjZialZCelB0UEh6OThmZ2NBcFB6dDdBOEFBQnhQQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0RDZnYzbDU3TS9BbkFTQVFBQVFRSUFvbjYvL1hzTEFFMENBQUNDQkFBRWZYM3I5eFlBZWdRQUFBUUpBSWg1N2JidkxRQzBDQUFBQ0JJQUVQTFdMZDliQU9nUUFBQVFKQUFnNHRiYnZiY0EwQ0FBQUNCSUFFQ0FXejN3TlFFQWZFTXd3UDRFQUd6T01BZGVJZ0NBRndrSDJKc0FBSUFnQVFBYmUvWVc3eTBBN0VzQUFFQ1FBSUJOamJxOWV3c0FleElBQUJBa0FHQkRvMi90M2dMQWZnUUFBQVFKQU5pTTJ6cHdDd0VBM0VSWXdGNEVBR3pFa0FadUpRQ0Ftd2tNMkljQWdFMFl6c0E5QkFCd0Y2RUJleEFBQUJBa0FHQURSOS9LdlFXQTZ4TUFBQkFrQU9EaXpycU5ld3NBMXlZQUFDQklBTUNGdVlVRGp4SUF3TU1FQ0Z5WEFJQ0xNbnlCWndnQTRDbENCSzVKQU1BRkdickFzd1FBOERSQkF0Y2pBT0JpREZ0Z0JBRUFEQ0ZNNEZvRUFGeUlJUXVNSWdDQVlRUUtYSWNBQUlBZ0FRQVg0WFlOakNRQWdLR0VDbHlEQUlBTE1GU0IwUVFBTUp4Z2dmVUpBRmljWVFyTUlBQ0FLWVFMckUwQXdNSU1VV0FXQVFCTUkyQmdYUUlBRm1WNEFqTUpBR0FxSVFOckVnQ3dJRU1UbUUwQUFFQ1FBQUNtODBZRDFpTUFZREdHSlhBRUFRQWNRdGpBV2dRQUxNU1FCSTRpQUlERENCeFlod0NBUlJpT3dKRUVBSEFvb1FOckVBQ3dBRU1ST0pvQUFBNG5lT0I4QWdCT1poZ0NaeEFBQUJBa0FPQkU1ZHQvK2J2RENnUUFBQVFKQURpSkc3QTFnRE1KQUFBSUVnREFxYndGZ0hNSUFEaUJvUWVjVFFBQXB4TkVjRHdCQUFjejdJQVZDQUJnQ2NJSWppVUE0RUNHSExBS0FRQUFRUUlBRHVMMi96WnJCTWNSQUFBUUpBRGdBRzYydDdOV2NBd0JBQUJCQWdBbWM2TzlueldEK1FRQUFBUUpBR0JKM2dMQVhBSUFKakxFZ0ZVSkFHQlpBZ3JtRVFBd2llRUZyRXdBQUVDUUFJQUozUDdIc1pZd2h3QUFnQ0FCQUlPNXNZNW5UV0U4QVFBQVFRSUFCbkpUbmNmYXdsZy9uUDBCZ08vNzhhZC8vUCsvVngrQ1YvcXNVUGYrMDhjUG44LytFTENEWndmZW40Zm5qRC8vS0xPL3gxdC9QbkFiYndEZ0JPVWg5dEozdjByY3dFNjhBWUFCWGh0Z293YjkxUWJrN085ZERpZ1l4UnNBR0dUV1VMcmE4SC8zN3N0bkhyRWUzaGJBUE40QXdNS3VQdXpjMUdGZC9oa2dMT3Jxdy8vZHV6MitBK3hLQUFCQWtBQ0FCZTEwYzk3cHU4Qk9CQUFzWnNlQnVlTjNncXNUQUxDUW5RZmx6dDhOcmtnQUFFQ1FBSUJGRkc3SWhlOElWeUVBWUFHbHdWajZyckF5QVFBbkt3N0U0bmVHMVFnQU9GRjVFSmEvTzZ4QUFBQkFrQUNBazdnQld3TTRrd0NBRXhoOGY3QVdjQTRCQUFjejhMNWxUZUI0QWdBT1pOQzl6dHJBc1FRQUFBUUpBRGlJRys3YnJCRWNSd0RBQVF5MjIxa3JPSVlBZ01rTXRQdFpNNWhQQUFCQWtBQ0FpZHhrSDJmdFlDNEJBSk1ZWU0remhqQ1BBSUFKREs1eHJDWE1JUUJnTUFOclBHc0s0d2tBQUFnU0FEQ1FtK284MWhiR0VnQXdpQUUxbnpXR2NRUUFER0F3SGNkYXd4Z0NBSjVrSUIzUG1zUHpCQUFBQkFrQWVJS2I2SG1zUFR4SEFNQ0RES0R6ZVFid09BRUFEekI0MXVGWndHTUVBQUFFQ1FDNGt4dm5landUdUo4QWdEc1lOT3Z5Yk9BK0FnQnVaTUNzenpPQzJ3a0F1SUhCY2gyZUZkeEdBQUJBa0FDQU43aFJYbzluQm04VEFQQWRCc2wxZVhid2ZRSUFYbUdBWEo5bkNLOFRBUEFDZzJNZm5pVzhUQUFBUUpBQWdLKzRNZTdITTRWdkNRRDRFNE5pWDU0dC9KVUFnTjhZRVB2empPRVBBZ0FBZ2dRQXZITXpMUEdzNFFzQlFKNkIwT09aZ3dBZ3ppRG84dXlwRXdCa0dRRFlBNVFKQUFBSUVnQWt1Zm54TzN1QktnRkFqZ09mcjlrVEZBa0FVaHowdk1iZW9FWUFrT0dBNXkzMkNDVUNBQUNDQkFBSmJuYmN5bDZoUWdDd1BRYzY5N0puS0JBQWJNMUJ6cVBzSFhZbkFBQWdTQUN3TFRjNG5tVVBzVE1Cd0pZYzNJeGlMN0VyQWNCMkhOaU1aayt4by9lZlBuNzRmUGFIZ0ZGV09LaC8vT2tmYi80L0szek9sVnhselc3NW5IQVZQNXo5QVdCMW93LzlGUWJaYW43OTVlYzMxL25lNTJDZDRmdThBV0FiOXh6NFo5M2tES1h2dThKejhSYUFYUWdBdG5ETERmSnNodjl0cnZBY1YvK01jQXNCQUFjdy9POWp3TUo4L2hVQVRHYjQzOCthd1h3Q0FDWXl5QjVuN1dBdWZ3VUFFeGhlWS9rckFSalBHd0FZelBBZno1ckNlQUlBQmpLbzVyRzJNSllBZ0VFTXFQbXNNWXdqQUdBQWcrazQxaHJHRUFEd0pBUHBlTlljbmljQTRBa0cwWG1zUFR4SEFNQ0RES0R6ZVFid09BRUFEekI0MXVGWndHTUVBTnpKd0ZtUFp3TDNFd0J3QjRObVhaNE4zRWNBd0kwTW1QVjVSbkE3QVFBM01GaXV3N09DMndnQWVJT0JjajJlR2J6TmJ3T0VWeGdpZS9DYkJPRmwzZ0RBQ3d6L2ZYaVc4RElCQUY4eE1QYmptY0szQkFEOGlVR3hMODhXL2tvQXdHOE1pUDE1eHZBSEFRRHZESVlTenhxK0VBRGtHUWc5bmprSUFPSU1naTdQbmpvQlFKWUJnRDFBbVFBZ3ljSFA3K3dGcWdRQU9RNTh2bVpQVUNRQVNISFE4eHA3Z3hvQlFJWURucmZZSTVRSUFCSWM3TnpLWHFIQ2J3TmthdzV6bnVFM0NiSXpid0RZbHVIUHMrd2hkaVlBMkpLRG0xSHNKWFlsQU5pT0E1dlI3Q2wySkFEWWlvT2FXZXd0ZGlNQTJJWURtdG5zTVhZaUFOaUNnNW1qMkd2c1FnQndlUTVram1iUHNRTUJ3S1U1aURtTHZjZlZDUUF1eXdITTJleEJya3dBY0VrT1hsWmhMM0pWQW9ETGNlQ3lHbnVTS3hJQVhJcURsbFhabTF5TkFPQXlITENzemg3bFN2dzJRSmJuVU9XSy9DWkJWdWNOQUVzei9Ma3FlNWZWQ1FDVzVRRGw2dXhoVmlZQVdKS0RrMTNZeTZ4S0FMQWNCeWE3c2FkWmtRQmdLUTVLZG1WdnN4b0J3RElja096T0htY2xBb0FsT0JpcHNOZFpoUURnZEE1RWF1eDVWaUFBT0pXRGtDcDduN01KQUU3akFLVE96d0JuRWdDY3dzRUhYL2haNEN3Q2dNTTU4T0N2L0V4d0JnSEFvUngwOERJL0d4ek5id1BrRUE0M3VKM2ZKTWdSdkFGZ09zTWY3dU5uaGlNSUFLWnlrTUZqL093d213QmdHZ2NZUE1mUEVETUpBS1p3Y01FWWZwYVlSUUF3bkFNTHh2SXp4UXdDZ0tFY1ZEQ0hueTFHODg4QVlUUC8vdWZmcC95NS8vclBmNmY4dWNBNXZBRUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0tEM256NSsrSHoyaHdBQWp1VU5BQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQklBQUJBa0FBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQklBQUJBa0FBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQklBQUJBa0FBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQklBQUJBa0FBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQklBQUJBa0FBQWc2SDgvelJrQVVZTjVFQUFBQUFCSlJVNUVya0pnZ2c9PSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAibWFza2FibGUifV19" />
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFIklEQVR4nO3cz20UTRCG8TEiCw5ckMiBBIiAGJAICIkYHIETcA6WfPGBOODCSsNqdqf/VHVXv/X8zvvhnuln6muvV7ttAAAAAAAAAAAAAPJ5mL2AGp8/ffwzew1Zvby+LdFK6EUScFxRAw+3KCJeT6S4QyyEiHXMjnvqDydkXbPCfjfjh24bMaubtb/DnyJCzmfktB46oYk5p5H7PuTJIWRceE9r9wlNzNjz7sE1aGLGEc8u3IImZtzj1YdL0MSMEh6dmAdNzKhh3Ytp0MSMFpbdmAVNzOhh1c+0P30DHkyCZjrDgkVH3UETMyz19sSRA1K6gmY6w0NPV81BEzM8tfbFkQNSmoJmOtd7fnqcvYTltHTGhIYUgh7gMp2Z0v6qg+a4gZFqe2NCO7ueykxpXwQNKVVBc9yoc2saM6Xr1HTHhIYUgnZyNoWZ0j4IGlKKg+b8XI7pa6+0Pyb0RIRvj6CNEelcBD0ZD4AtgjZEnPMRdAA8CHYI2ghRxkDQQfBA2CBoA8QYB0EHwoPRj6AhhaA7MVVjIehgeED6EHQH4ouHoAPiQWlH0I2ILiaCDooHpg1BNyC2uAg6MB6cegRdichiI2hIIegKM6Yz/0eoQ9CQQtCFZk5KpnQ5goYUgi4QYUJGWMMKCBpSCPpEpMkYaS1RETSkPJS+MOOXNd6aiF++fit6Xa3Sf/f6dVm8vL6d9vp+xEJWdhaP5THg+enxv5939LM5dtzHkeOOiJMw4poiIegOHtOSCdyHoBt5hkfU7Qi6wYjgiLoNQUMKQVcaOTmZ0vUIugKfh46PoAvx8dE1EHSBCEFFWMMKCBpSCPpEpMkYaS1REfQdEQOKuKZICPqGyOFEXttsBA0pBH1ghQm4whpnIOgrK4Wy0lpHIeidFQNZcc2eCBpSCPqflSfdymu3RtCbRhAK12AhfdBKIShdS6vUQSsGoHhNNVIHDT1pg1aeZMrXdiZl0Bk2PMM1HkkXdKaNznStF+mChrZUX9ZYMrHufdXWrInXuyaVrw8r+bLGNEFffxFiy38/U+/aFaImaCOzY75QiLJHSdCcoU9EiXnbYq0lKoK+I2JAEdcUCUHfEDmcyGubjaAPrBDMCmucgV8Kd1aNJMsvi/xSWGHVmLdt7bVbI+hNIwiFa7CQPmilEJSupVXqoBUDULymGmmDVt545Ws7kzLoDBue4RqPpAs600ZnutaLVEFn3OBs15wm6Gwbu5fp2lMEnWlDb8lyD+SDzrKRJTLcC+mgM2xgLfV7Ihu0+sb1UL43cp+2U94sDyt9Ui/dp+2IuZ7aPZMJWm1jRlK6dxJBK23ILCr3cPmgVTYiAoV7uXTQChsQzer3dNmgV7/xka18b5cMeuUbvopV77Hc+9AR/Pz+oeh1P379dl6JlnTvQwMEDSkEDSkEDSkEDSkEDSkEDSnFQZe8Bwh4Ke2PCQ0pBA0pBA0pVUFzjsYMNd0xoSGFoCGlOmiOHRiptjcmNKQ0TVs+7I9Rhkxojh0YoaUzjhyQ0hw0UxqeWvvqmtBEDQ89XXHkgJTuoJnSsNTbk8mEJmpYsOiIIwekmAXNlEYPq35MJzRRo4VlN+ZHDqJGDeteXM7QRI0SHp24/VJI1LjHqw/XdzmIGkc8u3B/246osefdw9DY+Bx1XqMG29A/rDCtcxq579MCY1rrmzHApv3pm2mtbdb+hoiKaa1j9qAKEfQeca9ndsR7YRZyhLjjihTxXshF3ULg80QNGAAAAAAAAAAAAI3+Aq14G1IIiqhgAAAAAElFTkSuQmCC" />
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFlUlEQVR4nO3cwW0UQRCF4TEiCw5ckMiBBIiAGJAICIkYHIETcA6WfPGBOOCAR1pWu97p7qruqnr/d17ZNTPvdc94vbttAAAAAAAAAAAAAAAAZdytHmDE508f/6yeAf88Pb+kzFKaoQl7PhlKEXpAQl9H1DKEHIrg1xWtCKGGIfg6ohQhxBAEX9fqIiz95QQfu1VFeLfil24b4cf/VuVheusIPm6ZuRtM3QEIP46YmZNpBSD8aDErL1MKQPjRY0Zu3AtA+DHCOz+uBSD8sOCZI7cCEH5Y8sqTSwEIPzx45Mq8AIQfnqzzZVoAwo8ZLHO27F8hgAjMCsDqj5ms8mZSAMKPFSxyxy0QpA0XgNUfK43mjx0A0oYKwOo/7vHhfvUI6Y3kkB0A0roLwOo/bl/92QXG9eaRHQDSugrA6j/ufNVnFxjXk0t2AEijAAtcW+3ZBeZrLgC3P4isNZ/sAJPdWuXZBeaiAJBGASZidY+HAgREUeZpKgAPwP0I9TwtOWUHCIrCzEEBJiDMcVGAwCiOPwoAaRTA2egqzi7giwJAGgVwxOodHwVIgCL5oQBOCG0OFCAJCuWDAjggrHlQgEQolj0KYIyQ5kIBII0CGJqx+rPD2KIAkEYBEmIXsEMBjBDKnChAUhTOBgUwQBjzogCJUbxxFGAQIcyNAkAaBRgQYfWPMENmFADSKECnSCtvpFmyoQCQRgE6RFxxI86UAQWAtLuWF/Pt0NdX2i9fvx16Xa+jP//8daqenl8OZfu99yAV3QqZx+3I48P9f7/30gzcBrXjFqhR5BU28mxRUQBjnqswK7w9CmCIj0TmQwGMzAwmJbBDASCNAhhYsSKzC9igAINWBpESjKMAAyIEMMIMmVEASKMAnSKtvJFmyYYCdIgYuIgzZUABGkUOWuTZoqIAkEYBGmRYYTPMGAkFOChTsDLNuhoFOCBjoDLOvAIFgDQKcEPmlTTz7LNQgDdUCFCFY/BEAa6oFJxKx2KNAkAaBbig4opZ8ZgsUIAzlYNS+dh6UYATCgFROMYWFADSKMArpZVR6VhvoQCbZiAUj/kS+QIoB0H52HfyBYA26a9HP7ICrvgm6BYW81X8Ut2jX48uW4Dzrxvv/RkRWBxHtRJQAGdRwr+rFuBRRwvAM0CHaOHftpgzZUABGkUOWuTZoqIADTIELMOMkVCAgzIFK9Osq/EQfEP2MKk+HPMQbCB7+LetxjF4ogBXVApOpWOxRgEuqBiYisdkgQKcqRyUysfWiwKcUAiIwjG2oACvlIKhdKy3UIBNMxCKx3yJfAGUg6B87DvpAhAAzoFsAdQv/CnlcyFZAOULfo3qOZErgOqFPkLx3EgVQPECt1I7RzIFULuwI5TOlUQBlC6oFZVzVvrzACoX0VvGzxTIfx6A8NupfC5LFqDyBVul6jktV4CqFyqCiue2VAEqXqBoqp3jMgWodmEiq3SuSxSg0gXJoso5T1+AKhciowrnvvT7ANH8/P7h0Ot+/PrtPEl98u8DAEdQAEijAJBGASCNAkAaBYC0pgIc/dMSsFJLTtkBII0CQBoFgDQKAGnNBeBBGJG15pMdANIoAKR1FYDbIETUk0t2AEjrLgC7ACLpzeNQiPmEGKLoLcDQLRC7ACIYySHPAJA2XAB2Aaw0mj92AEgzKQC7AFawyJ3ZDkAJMJNV3rgFgjTTArALYAbLnJnvAJQAnqzz5XILRAngwSNXbs8AlACWvPLk+hBMCWDBM0fufwWiBBjhnZ8pfwalBOgxIzfT3gegBGgxKy9T3wijBDhiZk6WBZIP0+DcigVy2b9CsBvg1Ko8hAghu4Gu1QthiALsKIKO1cHfhRjiHEWoK0rwd6GGOUcR6ogW/F3IoS6hDPlEDf2p8AO+hVLEkSHsAAAAAAAAAAAAAAAFfwGwcjy0ZJmm7wAAAABJRU5ErkJggg==" />
+<title>Plant Tracker Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+  :root {
+    --ink: #27241F;
+    --gold: #BD8B3A;
+    --cream: #EDDDCA;
+    --green: #3F6B4A;
+    --watered: #4FC3F7;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  #splashScreen {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 40%, #33302A 0%, var(--ink) 70%);
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  #splashScreen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .splash-icon {
+    font-size: 3.2rem;
+    animation: splashPulse 1.8s ease-in-out infinite;
+  }
+  .splash-title {
+    font-family: var(--font-display);
+    color: var(--cream);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .splash-sub {
+    color: var(--gold);
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    opacity: 0.9;
+  }
+  .splash-bar-track {
+    width: 160px;
+    height: 3px;
+    background: rgba(237,221,202,0.15);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .splash-bar-fill {
+    width: 40%;
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    animation: splashLoading 1.3s ease-in-out infinite;
+  }
+  @keyframes splashPulse {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.12); opacity: 1; }
+  }
+  @keyframes splashLoading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  header {
+    padding: 14px 20px;
+    background: var(--ink);
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+  }
+  header h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-optical-sizing: auto;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  header .sub {
+    font-size: 0.78rem;
+    opacity: 0.75;
+    margin-top: 2px;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #refreshBtn {
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.15s ease;
+  }
+  #refreshBtn:hover { opacity: 0.9; }
+  #refreshBtn:active { transform: scale(0.97); }
+  #refreshBtn:disabled { opacity: 0.5; cursor: default; }
+  #status {
+    font-size: 0.75rem;
+    color: var(--cream);
+    opacity: 0.7;
+    min-width: 140px;
+    text-align: right;
+  }
+  .search-input-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  #searchBox {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.85rem;
+    width: 150px;
+    background: rgba(255,255,255,0.95);
+  }
+  #searchBox:focus {
+    outline: 2px solid var(--gold);
+  }
+  #searchBtn {
+    background: transparent;
+    border: 1px solid rgba(237,221,202,0.4);
+    color: var(--cream);
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  #searchBtn:hover { background: rgba(237,221,202,0.1); }
+  #searchMsg {
+    font-size: 0.72rem;
+    color: #ffb3a3;
+    margin-top: 3px;
+    display: none;
+  }
+  #searchSuggestions {
+    display: none;
+    flex-direction: column;
+    background: var(--cream);
+    border-radius: 8px;
+    margin-top: 6px;
+    max-height: 260px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+  #searchSuggestions.open {
+    display: flex;
+  }
+  .suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(39,36,31,0.08);
+    color: var(--ink);
+    font-size: 0.88rem;
+  }
+  .suggestion-item:last-child { border-bottom: none; }
+  .suggestion-item:hover, .suggestion-item.active {
+    background: rgba(189,139,58,0.15);
+  }
+  .suggestion-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .suggestion-id {
+    font-weight: 700;
+    font-family: var(--font-display);
+  }
+  .suggestion-common {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .legend {
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+    z-index: 500;
+    background: rgba(255,255,255,0.95);
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 0.78rem;
+    line-height: 1.6;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .legend-toggle {
+    display: none;
+  }
+  .legend-body {
+    display: block;
+  }
+  .leaflet-control-layers {
+    font-size: 0.85rem;
+  }
+  .leaflet-popup-content {
+    font-family: inherit;
+    min-width: 220px;
+  }
+  .popup-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .popup-row {
+    font-size: 0.82rem;
+    color: #444;
+    margin: 2px 0;
+  }
+  .popup-photo {
+    width: 100%;
+    max-width: 220px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    display: block;
+    background: #eee;
+  }
+  .popup-badge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+  .badge-watered { background: #DCEBF7; color: var(--watered); }
+  .badge-notwatered { background: #eee; color: #888; }
+  #errorBanner {
+    display: none;
+    background: #B14A3E;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  #offlineBanner {
+    display: none;
+    background: #BD8B3A;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  .gallery-btn {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px 10px;
+    background: var(--ink);
+    color: var(--cream);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+  .gallery-btn:hover { opacity: 0.9; }
+
+  #galleryModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #galleryModal.open { display: flex; }
+  .gallery-panel {
+    background: var(--cream);
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .gallery-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--ink);
+    color: var(--cream);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .gallery-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+  .gallery-sub {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 14px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .gallery-thumb-wrap {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    transition: border-color 0.15s ease;
+  }
+  .gallery-thumb-wrap.selected {
+    border-color: var(--gold);
+  }
+  .gallery-thumb {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+  }
+  .gallery-thumb-label {
+    font-size: 0.68rem;
+    padding: 4px 6px;
+    color: #444;
+    line-height: 1.3;
+  }
+  .gallery-hint {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .gallery-compare {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 14px;
+    border-top: 1px solid #ddd;
+  }
+  .gallery-compare.open { display: grid; }
+  .gallery-compare img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    background: #eee;
+  }
+  .gallery-compare-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-top: 6px;
+    color: var(--ink);
+    text-align: center;
+  }
+  .gallery-empty {
+    font-size: 0.85rem;
+    color: #888;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Mobile bottom sheet */
+  #sheetBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1400;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+  }
+  #sheetBackdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  #bottomSheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--cream);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -6px 24px rgba(0,0,0,0.3);
+    z-index: 1500;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 10px 18px 24px;
+    box-sizing: border-box;
+    transform: translateY(105%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  #bottomSheet.open {
+    transform: translateY(0);
+  }
+  .sheet-handle {
+    width: 40px;
+    height: 4px;
+    background: #c9bda8;
+    border-radius: 2px;
+    margin: 4px auto 12px;
+  }
+  .sheet-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: rgba(39,36,31,0.08);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 0.95rem;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  #sheetContent .popup-photo {
+    max-width: 100%;
+    height: 180px;
+  }
+  #sheetContent .leaflet-popup-content {
+    min-width: 0;
+  }
+  #emptyState {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: #777;
+    font-size: 0.9rem;
+    background: var(--cream);
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 680px) {
+    header {
+      padding: 8px 12px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 8px;
+    }
+    header h1 {
+      font-size: 0.92rem;
+      white-space: nowrap;
+    }
+    header .sub {
+      font-size: 0.68rem;
+    }
+    .controls {
+      flex-direction: row;
+      align-items: center;
+      gap: 6px;
+      width: auto;
+    }
+    #status {
+      display: none; /* hidden on mobile to save space; still shown via toast on refresh */
+    }
+    .icon-btn {
+      display: flex !important;
+      background: rgba(237,221,202,0.12);
+      border: 1px solid rgba(237,221,202,0.3);
+      color: var(--cream);
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      font-size: 1rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    #refreshBtn {
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #refreshBtn .btn-label { display: none; }
+    .search-wrap {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--ink);
+      padding: 10px 12px;
+      gap: 0;
+      z-index: 900;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .search-wrap.open {
+      display: flex;
+    }
+    .search-input-row {
+      gap: 8px;
+    }
+    #searchBox {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px; /* prevents iOS auto-zoom on focus */
+      padding: 10px 12px;
+      flex: 1;
+    }
+    #searchBtn {
+      padding: 10px 14px;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+    #searchMsg {
+      margin-top: 6px;
+    }
+    #searchSuggestions {
+      max-height: 45vh;
+    }
+
+    /* Collapsible legend */
+    .legend {
+      bottom: 10px;
+      left: 10px;
+      right: auto;
+      max-width: none;
+      font-size: 0.75rem;
+      padding: 0;
+      max-height: none;
+      overflow: visible;
+      background: transparent;
+      box-shadow: none;
+    }
+    .legend-toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.95);
+      padding: 8px 12px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      font-weight: 700;
+      font-size: 0.78rem;
+      cursor: pointer;
+      width: fit-content;
+    }
+    .legend-body {
+      display: none;
+      background: rgba(255,255,255,0.97);
+      padding: 10px 14px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 6px;
+      max-height: 32vh;
+      overflow-y: auto;
+      max-width: 200px;
+    }
+    .legend-body.open {
+      display: block;
+    }
+
+    .leaflet-control-layers {
+      font-size: 0.78rem;
+    }
+    .popup-photo {
+      max-width: 160px;
+      height: 100px;
+    }
+    .leaflet-popup-content {
+      min-width: 160px;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="splashScreen">
+  <div class="splash-icon">🌲</div>
+  <div class="splash-title">Plant Tracker</div>
+  <div class="splash-sub">Loading your grove…</div>
+  <div class="splash-bar-track"><div class="splash-bar-fill"></div></div>
+</div>
+<div id="app">
+  <header>
+    <div>
+      <h1>🌲 Plant Tracker Map</h1>
+      <div class="sub" id="countLabel">Loading plant data…</div>
+    </div>
+    <div class="controls">
+      <span id="status"></span>
+      <button id="searchToggleBtn" class="icon-btn" style="display:none;" aria-label="Search">🔍</button>
+      <button id="refreshBtn"><span class="btn-icon">↻</span> <span class="btn-label">Refresh from Sheet</span></button>
+    </div>
+    <div class="search-wrap" id="searchWrap">
+      <div class="search-input-row">
+        <input id="searchBox" type="text" placeholder="Jump to Plant ID…" autocomplete="off" />
+        <button id="searchBtn">🔍 Go</button>
+      </div>
+      <div id="searchSuggestions"></div>
+      <div id="searchMsg">Not found</div>
+    </div>
+  </header>
+  <div id="errorBanner"></div>
+  <div id="offlineBanner"></div>
+  <div style="position:relative; flex:1 1 auto; min-height:0;">
+    <div id="map"></div>
+    <div id="emptyState">
+      <div>No plant locations found yet.</div>
+      <div>Add Latitude/Longitude values to your Plants tab, then hit Refresh.</div>
+    </div>
+    <div class="legend" id="legend">
+      <div class="legend-toggle" id="legendToggle">
+        <span>🌱 Category</span><span id="legendChevron">▾</span>
+      </div>
+      <div class="legend-body" id="legendBody">
+        <div id="legendCategories">Loading…</div>
+        <div style="margin-top:6px; padding-top:6px; border-top:1px solid #ddd;">
+          <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#4FC3F7; border:2px solid white; margin-right:6px; vertical-align:middle; box-shadow:0 1px 3px rgba(0,0,0,0.3);"></span>💧 = watered
+        </div>
+        <div style="margin-top:4px;">
+          <span style="display:inline-block; width:14px; height:14px; border-radius:50%; background:#E0722F; border:2px solid white; margin-right:6px; vertical-align:middle; box-shadow:0 1px 3px rgba(0,0,0,0.3);"></span>⚠️ = not measured in 30+ days
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="galleryModal">
+  <div class="gallery-panel">
+    <button class="gallery-close" id="galleryCloseBtn">✕</button>
+    <div class="gallery-title" id="galleryTitle">Plant</div>
+    <div class="gallery-sub" id="gallerySub"></div>
+    <div class="gallery-hint">Tap two photos to compare them side by side.</div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+    <div class="gallery-compare" id="galleryCompare"></div>
+  </div>
+</div>
+
+<div id="sheetBackdrop"></div>
+<div id="bottomSheet">
+  <div class="sheet-handle" id="sheetHandle"></div>
+  <button class="sheet-close-btn" id="sheetCloseBtn">✕</button>
+  <div id="sheetContent"></div>
+</div>
+
+<script>
+const SHEET_ID = "1X7c9lEhgSaz3_jf980HD9RmfvFkQ86_3KnKX9nvwdd4";
+const SHEET_GID = "0"; // Plants tab
+const GROWTH_GID = "2"; // Growth Summary tab
+const MEASUREMENTS_GID = "1"; // Measurements tab
+
+let plantFallbackPhotoById = {};
+let measurementsById = {}; // Plant ID -> array of {date, height, photoUrl, notes} sorted ascending
+
+let map = L.map('map', { zoomControl: true });
+let markersLayer = L.layerGroup().addTo(map);
+let hasFitOnce = false;
+let markersById = {};
+let plantSearchIndex = [];
+const CACHE_KEY = 'plantTrackerCache_v1';
+const NEEDS_ATTENTION_DAYS = 30;
+
+function daysSince(dateStr) {
+  if (!dateStr) return NaN;
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return NaN;
+  return Math.floor((Date.now() - d.getTime()) / 86400000);
+}
+
+// Base layers: street map + satellite imagery
+const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors',
+  maxZoom: 21
+});
+
+const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Imagery &copy; Esri, Maxar, Earthstar Geographics',
+  maxZoom: 20
+});
+
+// Optional labels overlay for satellite view (roads/place names)
+const satelliteLabels = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 20,
+  pane: 'shadowPane'
+});
+
+satelliteLayer.addTo(map); // default to satellite for a Google-Earth-style view
+
+const isMobile = window.matchMedia('(max-width: 680px)').matches;
+
+L.control.layers(
+  { 'Satellite': satelliteLayer, 'Street map': streetLayer },
+  { 'Roads & labels (satellite)': satelliteLabels },
+  { position: 'topright', collapsed: isMobile }
+).addTo(map);
+
+map.setView([45.2901, -122.7372], 18); // fallback center, refit happens on data load
+
+window.addEventListener('load', () => map.invalidateSize());
+setTimeout(() => map.invalidateSize(), 200);
+window.addEventListener('resize', () => map.invalidateSize());
+window.addEventListener('orientationchange', () => setTimeout(() => map.invalidateSize(), 300));
+
+function findKey(row, candidates) {
+  const keys = Object.keys(row);
+  for (const c of candidates) {
+    const hit = keys.find(k => k.trim().toLowerCase() === c);
+    if (hit) return hit;
+  }
+  // fallback: partial match
+  for (const c of candidates) {
+    const hit = keys.find(k => k.trim().toLowerCase().includes(c));
+    if (hit) return hit;
+  }
+  return null;
+}
+
+function parseBool(val) {
+  if (!val) return false;
+  const v = String(val).trim().toLowerCase();
+  return v === 'yes' || v === 'true' || v === 'y' || v === '1';
+}
+
+const CATEGORY_COLORS = {
+  'SQ': '#B14A3E', // redwood-ish red
+  'GF': '#3F6B4A', // green - grand fir
+  'DF': '#6B4F9E', // purple - douglas fir
+  'IC': '#C77D2E', // orange - incense cedar
+  'P':  '#2E7DAF', // blue - pine
+};
+const FALLBACK_COLOR = '#7A7266';
+
+function getCategory(id) {
+  const match = String(id).trim().match(/^([A-Za-z]+)-?\d*/);
+  return match ? match[1].toUpperCase() : 'OTHER';
+}
+
+function getCategoryColor(cat) {
+  return CATEGORY_COLORS[cat] || FALLBACK_COLOR;
+}
+
+function buildIcon(category, watered, needsAttention) {
+  const fill = getCategoryColor(category);
+  const w = 30, h = 40;
+  const wateredBadge = watered
+    ? `<circle cx="23" cy="8" r="6.5" fill="#4FC3F7" stroke="white" stroke-width="2"/>
+       <path d="M23 4.3c1.6 2.1 2.6 3.5 2.6 4.7a2.6 2.6 0 1 1-5.2 0c0-1.2 1-2.6 2.6-4.7z" fill="white"/>`
+    : '';
+  const attentionBadge = needsAttention
+    ? `<circle cx="7" cy="8" r="6.5" fill="#E0722F" stroke="white" stroke-width="2"/>
+       <text x="7" y="11.5" font-size="9" font-weight="700" text-anchor="middle" fill="white" font-family="Arial, sans-serif">!</text>`
+    : '';
+  const svg = `
+    <svg width="${w}" height="${h}" viewBox="0 0 30 40" xmlns="http://www.w3.org/2000/svg" style="display:block; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.45));">
+      <path d="M15 0C7 0 0 7 0 15c0 11 15 25 15 25s15-14 15-25C30 7 23 0 15 0z" fill="${fill}"/>
+      <circle cx="15" cy="15" r="10" fill="rgba(0,0,0,0.12)"/>
+      <circle cx="15" cy="15" r="6.5" fill="white"/>
+      ${wateredBadge}
+      ${attentionBadge}
+    </svg>
+  `;
+  return L.divIcon({
+    className: '',
+    html: svg,
+    iconSize: [w, h],
+    iconAnchor: [w / 2, h],
+    popupAnchor: [0, -h + 4]
+  });
+}
+
+function updateLegend(categoriesSeen, categoryLabels) {
+  const el = document.getElementById('legendCategories');
+  if (!categoriesSeen.size) {
+    el.textContent = 'No plants yet';
+    return;
+  }
+  el.innerHTML = Array.from(categoriesSeen).sort().map(cat => `
+    <div><span class="legend-dot" style="background:${getCategoryColor(cat)};"></span>${categoryLabels[cat] || cat}</div>
+  `).join('');
+}
+
+let jsonpCallbackCounter = 0;
+
+function fetchSheetViaJSONP(gid) {
+  return new Promise((resolve, reject) => {
+    const callbackName = 'sheetCallback_' + (jsonpCallbackCounter++);
+    const timeoutId = setTimeout(() => {
+      cleanup();
+      reject(new Error('Request timed out — check the Sheet ID and that sharing is set to "Anyone with the link can view".'));
+    }, 15000);
+
+    function cleanup() {
+      clearTimeout(timeoutId);
+      delete window[callbackName];
+      if (script.parentNode) script.parentNode.removeChild(script);
+    }
+
+    window[callbackName] = function(json) {
+      cleanup();
+      try {
+        const cols = json.table.cols.map(c => (c.label || c.id || '').trim());
+        const rows = json.table.rows.map(r => {
+          const obj = {};
+          r.c.forEach((cell, i) => {
+            obj[cols[i]] = cell ? (cell.f !== undefined && cell.f !== null ? cell.f : cell.v) : '';
+          });
+          return obj;
+        });
+        resolve(rows);
+      } catch (e) {
+        reject(new Error('Unexpected response format from Sheets.'));
+      }
+    };
+
+    const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?` +
+      `tqx=out:json;responseHandler:${callbackName}` +
+      `&gid=${gid}` +
+      `&_cb=${Date.now()}`;
+
+    const script = document.createElement('script');
+    script.src = url;
+    script.onerror = () => {
+      cleanup();
+      reject(new Error('Could not reach Google Sheets. Check the Sheet ID and sharing settings.'));
+    };
+    document.body.appendChild(script);
+  });
+}
+
+async function loadData() {
+  const btn = document.getElementById('refreshBtn');
+  const statusEl = document.getElementById('status');
+  const errorBanner = document.getElementById('errorBanner');
+  const offlineBanner = document.getElementById('offlineBanner');
+  const emptyState = document.getElementById('emptyState');
+  const countLabel = document.getElementById('countLabel');
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="btn-icon" style="display:inline-block; animation: spin 0.8s linear infinite;">↻</span> <span class="btn-label">Refreshing…</span>';
+  errorBanner.style.display = 'none';
+  offlineBanner.style.display = 'none';
+  emptyState.style.display = 'none';
+
+  try {
+    const [rows, growthRows, measRows] = await Promise.all([
+      fetchSheetViaJSONP(SHEET_GID),
+      fetchSheetViaJSONP(GROWTH_GID).catch(err => {
+        console.warn('Growth Summary fetch failed, continuing without it:', err);
+        return [];
+      }),
+      fetchSheetViaJSONP(MEASUREMENTS_GID).catch(err => {
+        console.warn('Measurements fetch failed, continuing without it:', err);
+        return [];
+      })
+    ]);
+
+    renderMapData(rows, growthRows, measRows);
+
+    try {
+      localStorage.setItem(CACHE_KEY, JSON.stringify({
+        timestamp: Date.now(),
+        rows, growthRows, measRows
+      }));
+    } catch (cacheErr) {
+      console.warn('Could not save offline cache:', cacheErr);
+    }
+
+    statusEl.textContent = 'Last updated ' + new Date().toLocaleTimeString();
+  } catch (err) {
+    console.error(err);
+
+    // Try falling back to the last successful load, cached in this browser
+    let cached = null;
+    try {
+      const raw = localStorage.getItem(CACHE_KEY);
+      if (raw) cached = JSON.parse(raw);
+    } catch (parseErr) {
+      console.warn('Could not read offline cache:', parseErr);
+    }
+
+    if (cached && cached.rows && cached.rows.length) {
+      renderMapData(cached.rows, cached.growthRows || [], cached.measRows || []);
+      const when = new Date(cached.timestamp).toLocaleString();
+      offlineBanner.style.display = 'block';
+      offlineBanner.textContent = `📡 Can't reach the sheet right now — showing cached data from ${when}.`;
+      statusEl.textContent = 'Offline (cached)';
+    } else {
+      errorBanner.style.display = 'block';
+      errorBanner.textContent = 'Could not load sheet data: ' + err.message;
+      statusEl.textContent = 'Load failed';
+    }
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<span class="btn-icon">↻</span> <span class="btn-label">Refresh from Sheet</span>';
+    const splash = document.getElementById('splashScreen');
+    if (splash) splash.classList.add('hidden');
+  }
+}
+
+function renderMapData(rows, growthRows, measRows) {
+  const emptyState = document.getElementById('emptyState');
+  const countLabel = document.getElementById('countLabel');
+
+  // Build a lookup: Plant ID -> chronological measurement/photo history
+  measurementsById = {};
+  if (measRows.length) {
+    const mSample = measRows[0];
+    const mIdKey = findKey(mSample, ['plant id', 'id']);
+    const mDateKey = findKey(mSample, ['date']);
+    const mHeightKey = findKey(mSample, ['height']);
+    const mPhotoKey = findKey(mSample, ['photo url', 'photo filename', 'photo', 'image url', 'image']);
+    const mNotesKey = findKey(mSample, ['notes']);
+
+    measRows.forEach(r => {
+      const pid = mIdKey ? String(r[mIdKey] || '').trim() : null;
+      if (!pid) return;
+      if (!measurementsById[pid]) measurementsById[pid] = [];
+      measurementsById[pid].push({
+        date: mDateKey ? r[mDateKey] : '',
+        height: mHeightKey ? r[mHeightKey] : '',
+        photoUrl: mPhotoKey ? r[mPhotoKey] : '',
+        notes: mNotesKey ? r[mNotesKey] : ''
+      });
+    });
+    Object.keys(measurementsById).forEach(pid => {
+      measurementsById[pid].sort((a, b) => new Date(a.date) - new Date(b.date));
+    });
+  }
+
+  // Build a lookup: Plant ID -> growth stats
+  const growthById = {};
+  if (growthRows.length) {
+    const gSample = growthRows[0];
+    const gIdKey = findKey(gSample, ['plant id', 'id']);
+    const firstHeightKey = findKey(gSample, ['first height']);
+    const latestHeightKey = findKey(gSample, ['latest height']);
+    const totalGrowthKey = findKey(gSample, ['total growth']);
+    const latestDateKey = findKey(gSample, ['latest measurement date', 'latest date']);
+
+    growthRows.forEach(r => {
+      const pid = gIdKey ? String(r[gIdKey] || '').trim() : null;
+      if (!pid) return;
+      growthById[pid] = {
+        firstHeight: firstHeightKey ? r[firstHeightKey] : '',
+        latestHeight: latestHeightKey ? r[latestHeightKey] : '',
+        totalGrowth: totalGrowthKey ? r[totalGrowthKey] : '',
+        latestDate: latestDateKey ? r[latestDateKey] : ''
+      };
+    });
+  }
+
+  markersLayer.clearLayers();
+
+  if (!rows.length) {
+    emptyState.style.display = 'flex';
+    countLabel.textContent = 'No rows found in sheet.';
+    return;
+  }
+
+  const sample = rows[0];
+  const idKey = findKey(sample, ['plant id', 'id']);
+  const latKey = findKey(sample, ['latitude', 'lat']);
+  const lonKey = findKey(sample, ['longitude', 'long', 'lng']);
+  const speciesKey = findKey(sample, ['species']);
+  const commonKey = findKey(sample, ['common name']);
+  const statusKey = findKey(sample, ['status']);
+  const notesKey = findKey(sample, ['location notes', 'notes']);
+  const wateredKey = findKey(sample, ['watered']);
+  const photoKey = findKey(sample, ['photo url', 'photo', 'image url', 'image']);
+
+  const bounds = [];
+  let plotted = 0;
+  const categoriesSeen = new Set();
+  const categoryLabels = {};
+  markersById = {};
+  plantSearchIndex = [];
+
+  rows.forEach(row => {
+    const latRaw = latKey ? row[latKey] : null;
+    const lonRaw = lonKey ? row[lonKey] : null;
+    const lat = parseFloat(latRaw);
+    const lon = parseFloat(lonRaw);
+    if (isNaN(lat) || isNaN(lon)) return;
+
+    const id = idKey ? (row[idKey] || 'Unnamed') : 'Unnamed';
+    const species = speciesKey ? row[speciesKey] : '';
+    const common = commonKey ? row[commonKey] : '';
+    const status = statusKey ? row[statusKey] : '';
+    const notes = notesKey ? row[notesKey] : '';
+    const watered = wateredKey ? parseBool(row[wateredKey]) : false;
+    const photoUrl = photoKey ? row[photoKey] : '';
+    const growth = growthById[String(id).trim()];
+    const category = getCategory(id);
+    categoriesSeen.add(category);
+    if (common && !categoryLabels[category]) {
+      categoryLabels[category] = common;
+    }
+    if (photoUrl) {
+      plantFallbackPhotoById[String(id).trim()] = photoUrl;
+    }
+
+    const daysSinceMeasured = growth ? daysSince(growth.latestDate) : NaN;
+    const needsAttention = isNaN(daysSinceMeasured) || daysSinceMeasured > NEEDS_ATTENTION_DAYS;
+
+    const marker = L.marker([lat, lon], { icon: buildIcon(category, watered, needsAttention) });
+
+    const growthHtml = growth && (growth.firstHeight || growth.latestHeight) ? `
+      <div class="popup-row" style="margin-top:6px; padding-top:6px; border-top:1px solid #eee;">
+        <strong>Growth:</strong>
+        ${growth.firstHeight !== '' ? `Start: ${growth.firstHeight}"` : ''}
+        ${growth.latestHeight !== '' ? ` → Now: ${growth.latestHeight}"` : ''}
+        ${growth.totalGrowth !== '' ? ` (+${growth.totalGrowth}")` : ''}
+      </div>
+      ${growth.latestDate ? `<div class="popup-row" style="font-size:0.72rem; color:#888;">Last measured: ${growth.latestDate}</div>` : ''}
+    ` : '';
+
+    const attentionHtml = needsAttention ? `
+      <div class="popup-row" style="margin-top:6px; padding:6px 8px; background:#FDF0E6; border-radius:6px; color:#B15A1F; font-size:0.78rem;">
+        ⚠️ ${isNaN(daysSinceMeasured) ? 'No measurement logged yet' : `Not measured in ${daysSinceMeasured} days`}
+      </div>
+    ` : '';
+
+    const popupHtml = `
+      ${photoUrl ? `<img class="popup-photo" src="${photoUrl}" alt="${id}" onerror="this.style.display='none'">` : ''}
+      <div class="popup-title">${id}</div>
+      ${common || species ? `<div class="popup-row">${common ? `<strong style="font-family: var(--font-display); font-size:0.95rem; font-weight:600;">${common}</strong>` : ''}${species ? `<br><em style="font-size:0.78rem; color:#666;">${species}</em>` : ''}</div>` : ''}
+      ${status ? `<div class="popup-row">Status: ${status}</div>` : ''}
+      ${notes ? `<div class="popup-row">${notes}</div>` : ''}
+      ${wateredKey ? `<span class="popup-badge ${watered ? 'badge-watered' : 'badge-notwatered'}">${watered ? '💧 Watered' : 'Not watered'}</span>` : ''}
+      ${growthHtml}
+      ${attentionHtml}
+      <button class="gallery-btn" onclick="openGallery('${String(id).trim().replace(/'/g, "\\'")}')">📷 View photo history</button>
+    `;
+    marker._popupHtml = popupHtml;
+    if (isMobile) {
+      marker.on('click', () => openBottomSheet(popupHtml));
+    } else {
+      marker.bindPopup(popupHtml);
+    }
+    markersLayer.addLayer(marker);
+    markersById[String(id).trim().toLowerCase()] = marker;
+    plantSearchIndex.push({
+      id: String(id).trim(),
+      common: common || '',
+      color: getCategoryColor(category)
+    });
+    bounds.push([lat, lon]);
+    plotted++;
+  });
+
+  if (plotted === 0) {
+    emptyState.style.display = 'flex';
+    countLabel.textContent = `${rows.length} row(s) in sheet, but none have valid coordinates yet.`;
+  } else {
+    countLabel.textContent = `${plotted} plant${plotted === 1 ? '' : 's'} plotted`;
+    if (!hasFitOnce || plotted <= 40) {
+      map.fitBounds(bounds, { padding: [40,40], maxZoom: 20 });
+      hasFitOnce = true;
+    }
+  }
+
+  updateLegend(categoriesSeen, categoryLabels);
+}
+
+function selectPlant(id) {
+  const msg = document.getElementById('searchMsg');
+  const marker = markersById[String(id).trim().toLowerCase()];
+  msg.style.display = 'none';
+
+  if (!marker) {
+    msg.textContent = `"${id}" not found`;
+    msg.style.display = 'block';
+    return;
+  }
+
+  map.setView(marker.getLatLng(), Math.max(map.getZoom(), 20), { animate: true });
+  if (isMobile) {
+    openBottomSheet(marker._popupHtml);
+  } else {
+    marker.openPopup();
+  }
+  closeSuggestions();
+  document.getElementById('searchBox').value = '';
+}
+
+function jumpToPlant() {
+  const input = document.getElementById('searchBox');
+  const query = input.value.trim().toLowerCase();
+  if (!query) return;
+
+  if (markersById[query]) {
+    selectPlant(query);
+    return;
+  }
+  // fallback: first filtered match
+  const matches = filterPlants(query);
+  if (matches.length) {
+    selectPlant(matches[0].id);
+  } else {
+    const msg = document.getElementById('searchMsg');
+    msg.textContent = `"${input.value}" not found`;
+    msg.style.display = 'block';
+  }
+}
+
+function filterPlants(query) {
+  const q = query.trim().toLowerCase();
+  let results = plantSearchIndex;
+  if (q) {
+    results = plantSearchIndex.filter(p =>
+      p.id.toLowerCase().includes(q) || p.common.toLowerCase().includes(q)
+    );
+  }
+  return [...results].sort((a, b) => a.id.localeCompare(b.id));
+}
+
+function renderSuggestions(query) {
+  const box = document.getElementById('searchSuggestions');
+  const matches = filterPlants(query).slice(0, 50);
+
+  if (!matches.length) {
+    box.innerHTML = `<div class="suggestion-item" style="cursor:default; color:#888;">No matches</div>`;
+    box.classList.add('open');
+    return;
+  }
+
+  box.innerHTML = matches.map(p => `
+    <div class="suggestion-item" data-id="${p.id.replace(/"/g, '&quot;')}">
+      <span class="suggestion-dot" style="background:${p.color};"></span>
+      <span class="suggestion-id">${p.id}</span>
+      ${p.common ? `<span class="suggestion-common">${p.common}</span>` : ''}
+    </div>
+  `).join('');
+  box.classList.add('open');
+
+  box.querySelectorAll('.suggestion-item[data-id]').forEach(el => {
+    el.addEventListener('click', () => selectPlant(el.dataset.id));
+  });
+}
+
+function closeSuggestions() {
+  document.getElementById('searchSuggestions').classList.remove('open');
+}
+
+// ---- Photo history gallery ----
+let gallerySelected = [];
+
+function openGallery(plantId) {
+  const modal = document.getElementById('galleryModal');
+  const title = document.getElementById('galleryTitle');
+  const sub = document.getElementById('gallerySub');
+  const grid = document.getElementById('galleryGrid');
+  const compare = document.getElementById('galleryCompare');
+
+  gallerySelected = [];
+  compare.classList.remove('open');
+  compare.innerHTML = '';
+
+  title.textContent = plantId;
+
+  let history = measurementsById[plantId] || [];
+  history = history.filter(h => h.photoUrl); // only entries with a photo
+
+  // fallback: if no dated photos yet, show the single Plants-tab photo
+  if (!history.length && plantFallbackPhotoById[plantId]) {
+    history = [{ date: '', height: '', photoUrl: plantFallbackPhotoById[plantId], notes: 'Current photo' }];
+  }
+
+  if (!history.length) {
+    sub.textContent = '';
+    grid.innerHTML = '<div class="gallery-empty">No photos logged yet for this plant.</div>';
+    modal.classList.add('open');
+    return;
+  }
+
+  sub.textContent = `${history.length} photo${history.length === 1 ? '' : 's'} logged`;
+
+  grid.innerHTML = history.map((h, i) => `
+    <div class="gallery-thumb-wrap" data-index="${i}" onclick="toggleGallerySelect(${i})">
+      <img class="gallery-thumb" src="${h.photoUrl}" onerror="this.style.opacity='0.2'">
+      <div class="gallery-thumb-label">${h.date || ''}${h.height ? ` · ${h.height}"` : ''}</div>
+    </div>
+  `).join('');
+
+  modal.dataset.history = JSON.stringify(history);
+  modal.classList.add('open');
+}
+
+function toggleGallerySelect(index) {
+  const modal = document.getElementById('galleryModal');
+  const history = JSON.parse(modal.dataset.history || '[]');
+  const wraps = document.querySelectorAll('.gallery-thumb-wrap');
+
+  const pos = gallerySelected.indexOf(index);
+  if (pos > -1) {
+    gallerySelected.splice(pos, 1);
+  } else {
+    if (gallerySelected.length >= 2) gallerySelected.shift(); // keep max 2, drop oldest
+    gallerySelected.push(index);
+  }
+
+  wraps.forEach(w => {
+    const i = parseInt(w.dataset.index, 10);
+    w.classList.toggle('selected', gallerySelected.includes(i));
+  });
+
+  const compare = document.getElementById('galleryCompare');
+  if (gallerySelected.length === 2) {
+    const sorted = [...gallerySelected].sort((a, b) => a - b);
+    compare.innerHTML = sorted.map(i => {
+      const h = history[i];
+      return `
+        <div>
+          <img src="${h.photoUrl}">
+          <div class="gallery-compare-label">${h.date || 'Photo'}${h.height ? ` · ${h.height}"` : ''}</div>
+        </div>
+      `;
+    }).join('');
+    compare.classList.add('open');
+  } else {
+    compare.classList.remove('open');
+    compare.innerHTML = '';
+  }
+}
+
+document.getElementById('galleryCloseBtn').addEventListener('click', () => {
+  document.getElementById('galleryModal').classList.remove('open');
+});
+document.getElementById('galleryModal').addEventListener('click', (e) => {
+  if (e.target.id === 'galleryModal') {
+    document.getElementById('galleryModal').classList.remove('open');
+  }
+});
+
+// ---- Mobile bottom sheet ----
+function openBottomSheet(html) {
+  document.getElementById('sheetContent').innerHTML = html;
+  document.getElementById('bottomSheet').classList.add('open');
+  document.getElementById('sheetBackdrop').classList.add('open');
+}
+function closeBottomSheet() {
+  document.getElementById('bottomSheet').classList.remove('open');
+  document.getElementById('sheetBackdrop').classList.remove('open');
+}
+
+document.getElementById('sheetCloseBtn').addEventListener('click', closeBottomSheet);
+document.getElementById('sheetBackdrop').addEventListener('click', closeBottomSheet);
+
+// Swipe-down-to-dismiss on the handle
+(function() {
+  const sheet = document.getElementById('bottomSheet');
+  const handle = document.getElementById('sheetHandle');
+  let startY = null;
+  let currentTranslate = 0;
+
+  function onStart(y) {
+    startY = y;
+    sheet.style.transition = 'none';
+  }
+  function onMove(y) {
+    if (startY === null) return;
+    const delta = y - startY;
+    if (delta > 0) {
+      currentTranslate = delta;
+      sheet.style.transform = `translateY(${delta}px)`;
+    }
+  }
+  function onEnd() {
+    sheet.style.transition = '';
+    if (currentTranslate > 90) {
+      closeBottomSheet();
+    }
+    sheet.style.transform = '';
+    startY = null;
+    currentTranslate = 0;
+  }
+
+  handle.addEventListener('touchstart', (e) => onStart(e.touches[0].clientY), { passive: true });
+  handle.addEventListener('touchmove', (e) => onMove(e.touches[0].clientY), { passive: true });
+  handle.addEventListener('touchend', onEnd);
+})();
+
+document.getElementById('searchBtn').addEventListener('click', jumpToPlant);
+document.getElementById('searchBox').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') jumpToPlant();
+  if (e.key === 'Escape') closeSuggestions();
+});
+document.getElementById('searchBox').addEventListener('input', (e) => {
+  renderSuggestions(e.target.value);
+});
+document.getElementById('searchBox').addEventListener('focus', (e) => {
+  renderSuggestions(e.target.value); // shows full plant list immediately if empty
+});
+document.addEventListener('click', (e) => {
+  const wrap = document.getElementById('searchWrap');
+  if (wrap && !wrap.contains(e.target)) {
+    closeSuggestions();
+  }
+});
+
+// Mobile search toggle
+const searchToggleBtn = document.getElementById('searchToggleBtn');
+const searchWrap = document.getElementById('searchWrap');
+if (searchToggleBtn) {
+  searchToggleBtn.addEventListener('click', () => {
+    searchWrap.classList.toggle('open');
+    if (searchWrap.classList.contains('open')) {
+      document.getElementById('searchBox').focus();
+      renderSuggestions(document.getElementById('searchBox').value);
+    } else {
+      closeSuggestions();
+    }
+  });
+}
+
+// Collapsible legend (mobile)
+const legendToggle = document.getElementById('legendToggle');
+const legendBody = document.getElementById('legendBody');
+const legendChevron = document.getElementById('legendChevron');
+if (legendToggle) {
+  legendToggle.addEventListener('click', () => {
+    legendBody.classList.toggle('open');
+    legendChevron.textContent = legendBody.classList.contains('open') ? '▴' : '▾';
+  });
+}
+
+document.getElementById('refreshBtn').addEventListener('click', loadData);
+loadData();
+</script>
+</body>
+</html>
